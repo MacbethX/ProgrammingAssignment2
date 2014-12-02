@@ -39,10 +39,3 @@ cacheSolve <- function(x, ...) {
 	x$set_inverse(this_inv)
 	this_inv
 }# cacheSolve
-x<- rbind(c(1, -1/4), c(-1/4, 1))
-class(x)
-m = makeCacheMatrix(x)
-m$get()
-m$get_inverse()
-cacheSolve(x)
-cacheSolve(m)
